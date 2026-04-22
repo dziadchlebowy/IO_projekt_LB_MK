@@ -1,0 +1,18 @@
+Tytuł: Serwis streamingowy SlopStream
+Opis:
+
+Serwis streamingowy, gdzie twórcy treści mogą transmitować na żywo swoje treści dla widzów.
+
+Platforma obsługuje trzy typy użytkowników: widza, streamera i administratora..
+1. Niezalogowany
+Niezalogowany widz może przeglądać transmisje na żywo i zapisane. W momencie wejścia moduł ModułTransmisji pobiera listę aktywnych streamów z bazy danych, a moduł ModułKategorii umożliwia ich filtrowanie. Dane o popularności są dostarczane przez moduł ModułStatystyk.
+2. Użytkownik
+Po rejestracji i zalogowaniu użytkownik staje się obiektem, który może wykonywać dodatkowe rzeczy. Może on obserwować streamera (obsługiwane przez ModułObserwacji), uczestniczyć w czacie (ModułCzatu), a także wysyłać datki (ModułDatków). Rejestruje on transakcje i przekazuje informację do modułu Portfela twórcy. Użytkownik może również wykupić subskrypcję kanału poprzez ModułSubskrypcji, który comiesięcznie nalicza opłaty.
+3. Streamer
+Użytkownik może być streamerem poprzez aktywację w opcjach kanału. Wtedy jego konto zostaje rozszerzone do obiektu Streamer. Streamer uruchamia transmisję poprzez ModułStreamowania, który odpowiada za obsługę transmisji wideo. Streamer może czatować z widzami. W trakcie streama ModułCzatu obsługuje wiadomości, a streamer jako właściciel kanału może blokować na zawsze i wyciszać na godzinę użytkowników.
+3.1. Monetyzacja
+Każda donacja, reklama albo subskrybcja przechodzi przez ModułRozliczeń, który zapisuje je na koncie streamera. Streamer może sprawdzić ile ma pieniędzy. Gdy chce wypłacić pieniądze, wywołuje ModułWypłat. Umożliwia to wybór metody płatności i zapisuje zlecenie w historii. Historia operacji jest zapisana w module ModułTransakcji.
+4. Admin
+Administrator systemu działa jako obiekt Admin i posiada dostęp do ModułuZarządzania. Może on przeglądać użytkowników, blokować konta, moderować transmisje oraz zarządzać kategoriami. W przypadku zgłoszeń od użytkowników, ModułWsparcia przekazuje zgłoszenie do administratora, który może je rozpatrzyć i zamknąć.
+5. System
+System zbiera informacje o działaniach użytkowników i streamerów. ModułStatystyk analizuje informacje o oglądalności, aktywności, przychodach i tworzy uproszczone raporty publiczne i dla administratora.
