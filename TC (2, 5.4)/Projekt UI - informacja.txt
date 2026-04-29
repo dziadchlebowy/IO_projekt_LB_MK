@@ -1,0 +1,8 @@
+Zgodnie z punktem 2 kryteriów:
+
+"Wykorzystanie narzędzi sztucznej inteligencji:
+    1. Nie wolno generować diagramów ani tekstu przy wykorzystaniu narzędzi (generatywnej) SI. Jeśli takie działania zostaną wykryte, wówczas projekt zostanie "wyzerowany".
+    2. Można generować prototypy interfejsu (zawsze trzeba to jednoznacznie zadeklarować z podaniem narzędzia).
+    3. W przypadku wątpliwości co do przestrzegania zasad, autorzy mogą zostać poproszeni o wyjaśnienia."
+
+Ekrany prototypu interfejsu (Projekt UI.pdf) zostały wygenerowane z pomocą asystenta GenAI w Balsamiq, proces ich powstawania był cały czas kontrolowany.
