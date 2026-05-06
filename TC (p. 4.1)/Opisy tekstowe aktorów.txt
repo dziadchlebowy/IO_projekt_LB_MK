@@ -1,0 +1,5 @@
+Gość: Niezalogowany użytkownik serwisu. Jest ograniczony do przeglądania zasobów publicznych (np. wycena, kontakt i inne informacje o firmie) i zarejestrować (zalogować) się.
+Klient: Zalogowany użytkownik końcowy serwisu i konsument usług firmy. 
+Pracownik firmy: Konto osoby z odpowiednimi uprawnieniami. Stanowi motor napędowy działania całej firmy (i serwisu) i jest pośrednikiem między klientem a serwisantem. Zarządza umowami klient-firma, ewidencjonowuje urządzenia i części zamienne i planuje terminy wizyt.
+Serwisant: Konto osoby, która naprawia sprzęt oraz może rejestrować (notować) odczyty liczników (zużycie drukarek i części).
+Kierownik: Konto osoby, która zarządza pracownikami, serwisantami i ich projektami. Dba o jakość wykonywanych usług. W kontekście systemu jest ograniczona do monitorowania jakości.

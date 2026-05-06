@@ -1,0 +1,25 @@
+- opis tekstowy ciągu zdarzeń, zarówno podstawowego jak i alternatywnych (np. awaryjnego)
+- częstotliwość wykonania, przewidywane spiętrzenia oraz czasy realizacji (typowy, maksymalny)
+- opis wartości uzyskiwanych przez aktorów po zakończeniu przypadku użycia
+
+1. Zarejestrowanie konta (przypadek użycia przez gościa)
+	a. Po kliknięciu na przycisk rejestracji gość jest zabierany do okna rejestracji, gdzie może wpisać dane. Są one potem walidowane (czy konto istnieje, czy hasło spełnia warunki). Po poprawnej rejestracji wysyłany jest mail informacyjny i użytkownik jest logowany automatycznie.
+	Jeżeli użytkownik wpisał dane niespełniające kryteriów, wyświetlają mu się komunikaty błędów, a rejestracja nie ma miejsca, dopóki nie zostaną naprawione.
+	
+	b. Do kilku razy dziennie dla jednego gościa, albo kilkadziesiąt razy dziennie dla serwisu. Opóźnienia czasowe są możliwe przy wpisywaniu błędnych danych albo problemach z serwerem bazodanowym. Typowy czas realizacji: minuta, maksymalny: od minuty do kilku godzin w zależności od przestojów serwera
+	
+	c. Gość uzyskuje swoje własne konto, w którym może zarządzać swoimi umowami itd.
+	
+2. Sprawdzanie raportów (przypadek użycia przez kierownika)
+	a. Na koncie kierownika po kliknięciu w panel raportów, wyświetla się strona z wieloma elementami interaktywnymi, np. wykresy kołowe, tabele i listy. Zawierają one wszystkie logowane i mierzalne informacje, np. jaki serwisant wykonał najwięcej napraw w ciągu miesiąca. W przypadku błędu serwera wyświetli się komunikat albo wyświetlą się starsze dane.
+	
+	b. Kilka razy dziennie. Możliwe spiętrzenia przy błędach serwera bazodanowego. Typowy czas realizacji to kilka sekund na agregację danych zapisanych w pamieci podręcznej. Raporty są tworzone co godzinę podczas bezczynności systemu. Maksymalny czas: Kilka minut w razie problemów z serwerami.
+	
+	c. Kierownik uzyskuje wgląd w pracę serwisantów i pracowników.
+	
+3. Naprawa zgłoszonych urządzeń (przypadek użycia przez serwisanta)
+	a. Na koncie serwisanta po kliknięciu w panel zgłoszonych urządzeń wyświetla się strona z listą zgłoszeń przyznanych serwisantowi przez dowolnego pracownika firmy. Serwisant może w każdym momencie zmienić status zgłoszenia (naprawione, w trakcie, anulowane) albo uzyskać kontakt do klienta w razie pytań o sprzęt.
+	
+	b. Kilka razy dziennie. Mogą wystąpić opóźnienia w związku z błędem serwera. Czas realizacji (wyświetlenia interaktywnej strony) to kilka sekund (dane są brane na żywo), a maksymalny czas to kilka minut w razie problemów z serwerami.
+	
+	c. Serwisant może zobaczyć listę sprzętu do naprawy, co umożliwia mu pracowanie.
