@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLSpecialState</id><coordinates><x>117</x><y>0</y><w>18</w><h>18</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>9</y><w>117</w><h>117</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;110;110</additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>108</y><w>162</w><h>99</h></coordinates><panel_attributes>W poczekalni
+--
+- idZgłoszenia
+- autor
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>135</y><w>225</w><h>36</h></coordinates><panel_attributes>Anulowanie / zamknijZgłoszenie()
+lt=-&gt;</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>585</x><y>108</y><w>162</w><h>99</h></coordinates><panel_attributes>Anulowane
+--
+- powód
+- kto anulował
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>738</x><y>36</y><w>90</w><h>90</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;80;80;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>810</x><y>27</y><w>18</w><h>18</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>198</y><w>387</w><h>63</h></coordinates><panel_attributes>Odrzucenie / zamknijZgłoszenie()
+lt=-&gt;</panel_attributes><additional_attributes>10;10;100;50;320;50;410;10</additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>198</y><w>252</w><h>144</h></coordinates><panel_attributes>Przypisanie serwisanta / przypiszSerwisanta()
+lt=-&gt;</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>324</y><w>162</w><h>99</h></coordinates><panel_attributes>W trakcie
+--
+- idSerwisanta
+
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>522</y><w>162</w><h>99</h></coordinates><panel_attributes>Wykonane
+--
+- data wykonania
+- końcowa wycena
+
+valign=top
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>297</x><y>414</y><w>252</w><h>126</h></coordinates><panel_attributes>Wykonanie zgłoszenia / zamknijZgłoszenie()
+lt=-&gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>198</y><w>306</w><h>198</h></coordinates><panel_attributes>m1=Przerwanie / zamknijZgłoszenie()
+lt=-&gt;</panel_attributes><additional_attributes>10;190;320;190;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>558</y><w>153</w><h>36</h></coordinates><panel_attributes>
+lt=-&gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>513</x><y>567</y><w>18</w><h>18</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element></diagram>
