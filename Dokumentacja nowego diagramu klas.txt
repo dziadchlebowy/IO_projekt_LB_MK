@@ -1,0 +1,179 @@
+BazaDanych
+Klasa która jest zintegrowana z bazą danych i ma funkcje pomocnicze
+getBazaDanych()
+getModel()
+getLogs()
+
+Czesc
+Wymienna część urządzenia, m.in. toner albo licznik
+id
+nazwa
+ilość
+getCena() - za sztukę
+
+Data
+Klasa pomocnicza definiująca czas
+rok
+miesiąc
+dzień
+godzina
+minuta
+sekunda
+Data() - konstruktor
+
+Drukarka
+Model wyspecjalizowany pod drukowanie
+
+Faktura
+Specjalny typ płatności za umowę
+id
+kwota
+termin_platnosci
+wygenerujPDF()
+oznaczJaokOplacona()
+
+GeneratorRaportow
+Klasa generująca raporty
+GeneratorRaportow() - konstruktor
+
+Harmonogram
+Klasa implementująca harmonogram serwisanta
+dodajWizyte()
+usunWizyte()
+pobierzWizyty()
+
+Kierownik
+Konto definiujące kierownika firmy
+zobaczRaport()
+pobierzRaport()
+
+Konto
+Zarejestrowane konto na stronie
+id
+imię
+nazwisko
+telefon
+email
+login
+hasło
+zmienHaslo()
+zmienEmail()
+
+Kserokopiarka
+Model wyspecjalizowany pod ksero
+
+Licznik
+Część montowana w urządzeniach do notowania zużycia
+PotwierdzenieZLicznika() - pobiera odczyt
+WyslijOdczyt()
+
+Magazyn
+Przechowuje części i urządzenia
+getCzesc()
+dodajCzesc()
+usunCzesc()
+
+Materiał
+Część konsumencka, np. atrament do drukarki
+
+Model
+Urządzenie konsumenckie, np. drukarka
+id
+numer_seryjny
+producent
+model
+termin - data ewidencjonowania
+status - stan urządzenia
+zmienStatus()
+getCzesci()
+
+Pracownik
+Konto definiujące pracownika firmy
+ZerwijUmowe()
+
+Raport
+Plik zawierający informacje i statystyki
+eksportuj()
+
+Serwisant
+Konto definiujące serwisanta firmy
+rozpocznijWizyte()
+zakonczWizyte()
+zawiesWizyte()
+odwiesWizyte()
+dodajNotatke() - do zgłoszenia/wizyty
+
+StanUrządzenia
+Stan urządzenia
+Aktywne - w magazynie
+Dzierzawione - poza magazynem, wypożyczone przez klienta
+Serwisowane - poza magazynem, serwisowane
+
+StanWizyty
+Stan wizyty
+Zaplanowana
+Zawieszona
+W trakcie
+Zakonczona
+
+StanZgloszenia
+Stan zgłoszenia
+W poczekalni - w trakcie weryfikacji przez pracownika
+Anulowane
+W trakcie
+Wykonane
+
+UmowaDzierzawy
+Umowa wypożyczenia urządzenia
+id
+data_od
+data_do
+oplata_miesieczna
+UmowaDzierzawy() - konstruktor
+SkierujDoPodpisania() - wyślij do klienta
+ZamontujLicznik()
+
+Utils
+Klasa pomocnicza do generacji raportów
+dodajDoRaportu() - tworzy raport
+getLogs()
+
+Uzytkownik
+Konto definiujące klienta
+nazwa
+adres
+NIP
+utworzZgloszenie()
+zamowCzesc()
+pobierzUmowy()
+PodpiszUmowe()
+ZglosAwarie()
+
+Wizyta
+Wizyta u serwisanta
+id
+termin
+notatka
+status
+
+WycenaNaprawy
+Wycena naprawy urządzenia
+id
+koszt_pracy
+koszt_czesci
+status
+WycenaNaprawy()
+DostanSume()
+zaakceptuj()
+odrzuc()
+
+Zgloszenie
+Zgłoszenie klienta
+id
+data_zgloszenia
+opis
+stan
+zmienStan()
+przypiszSerwisanta()
+dodajZalacznik()
+zamknij()
